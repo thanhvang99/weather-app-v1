@@ -16,7 +16,7 @@ badd +1 .env
 badd +20 term://.//28026:/bin/zsh
 badd +1 src
 badd +18 src/simulation.json
-badd +47 src/App.sass
+badd +1 src/App.sass
 badd +24 public/index.html
 badd +20 term://.//84889:/bin/zsh
 argglobal
@@ -45,12 +45,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 75 - ((24 * winheight(0) + 14) / 29)
+let s:l = 72 - ((14 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-75
-normal! 0
+72
+normal! 031|
 wincmd w
 argglobal
 if bufexists("src/App.js") | buffer src/App.js | else | edit src/App.js | endif
