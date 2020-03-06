@@ -45,12 +45,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 72 - ((14 * winheight(0) + 14) / 29)
+let s:l = 37 - ((16 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-72
-normal! 031|
+37
+normal! 0
 wincmd w
 argglobal
 if bufexists("src/App.js") | buffer src/App.js | else | edit src/App.js | endif
